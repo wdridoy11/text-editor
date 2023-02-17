@@ -30,6 +30,20 @@ textAlign("text-center", 'center');
 textAlign("text-right", 'right');
 textAlign("text-justify", 'justify');
 /*==================================================
+               text transform style
+  ==================================================*/
+function textTransform(elementId, styleCss) {
+   const element = document.getElementById(elementId);
+   element.addEventListener("click", function () {
+      const userText = document.getElementById("user-text");
+      userText.style.textTransform = styleCss;
+   })
+}
+textTransform("uppercase", "uppercase");
+textTransform("lowercase", "lowercase");
+textTransform("capitalize", "capitalize");
+
+/*==================================================
                   font-size
   ==================================================*/
 document.getElementById("font-size").addEventListener("click", function (event) {
