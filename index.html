@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://kit.fontawesome.com/65b4c8277d.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <header class="mt-10">
+      <div class="w-9/12 mx-auto">
+         <nav>
+            <ul class="flex bg-neutral-200 border-x border-t border-slate-300">
+               <li class="bg-white py-2 px-4 text-base text-black"><a href="#">File</a></li>
+               <li class="bg-neutral-200 py-2 px-4 text-base text-black"><a href="#">Edit</a></li>
+               <li class="bg-neutral-200 py-2 px-4 text-base text-black"><a href="#">Section</a></li>
+               <li class="bg-neutral-200 py-2 px-4 text-base text-black"><a href="#">View</a></li>
+               <li class="bg-neutral-200 py-2 px-4 text-base text-black"><a href="#">Go</a></li>
+               <li class="bg-neutral-200 py-2 px-4 text-base text-black"><a href="#">Run</a></li>
+               <li class="bg-neutral-200 py-2 px-4 text-base text-black"><a href="#">Terminal</a></li>
+               <li class="bg-neutral-200 py-2 px-4 text-base text-black"><a href="#">Help</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <section class=" w-9/12 mx-auto bg-neutral-100">
+         <ul class="flex items-center border-x border-b border-slate-300">
+            <div class="flex border-r border-slate-300">
+               <li id="text-bold" class="bg-neutral-100 py-2 px-2 mx-2 text-base text-black cursor-pointer">
+                  <i class="fa-solid fa-bold"></i>
+               </li>
+               <li id="text-italic" class="bg-neutral-100 py-2 px-2 mx-2 text-base text-black cursor-pointer">
+                  <i class="fa-solid fa-italic"></i>
+               </li>
+               <li id="text-underline" class="bg-neutral-100 py-2 px-2 mx-2 text-base text-black cursor-pointer">
+                  <i class="fa-solid fa-underline"></i>
+               </li>
+            </div>
+            <div class="flex border-r border-slate-300">
+               <li id="text-left" class="bg-neutral-100 py-2 px-2 mx-2 text-base text-black cursor-pointer">
+                  <i class="fa-solid fa-align-left"></i>
+               </li>
+               <li id="text-center" class="bg-neutral-100 py-2 px-2 mx-2 text-base text-black cursor-pointer">
+                  <i class="fa-solid fa-align-center"></i>
+               </li>
+               <li id="text-right" class="bg-neutral-100 py-2 px-2 mx-2 text-base text-black cursor-pointer">
+                  <i class="fa-solid fa-align-right"></i>
+               </li>
+               <li id="text-justify" class="bg-neutral-100 py-2 px-2 mx-2 text-base text-black cursor-pointer">
+                  <i class="fa-solid fa-align-justify"></i>
+               </li>
+            </div>
+            <div class="flex border-r border-slate-300 bg-neutral-100 mx-2">
+               <select id="font-family" class="focus:outline-none">
+                  <option class="font-family-list">Roboto</option>
+                  <option class="font-family-list">Poppins</option>
+                  <option class="font-family-list">Playfair Display</option>
+                  <option class="font-family-list">Open Sans</option>
+                  <option class="font-family-list">Montserrat</option>
+                  <option class="font-family-list">Lato</option>
+                  <option class="font-family-list">Inter</option>
+               </select>
+            </div>
+            <div class="flex border-r border-slate-300 bg-neutral-100">
+               <li class="py-2 px-2">
+                  <input type="number" name="number" class="w-11" id="font-size" value="18">
+               </li>
+            </div>
+            <li class="mx-2">
+               <input type="color" class="w-8" name="color" id="color">
+            </li>
+         </ul>
+         <div>
+            <textarea name="textarea" class="w-full border border-slate-300 min-h-[600px] focus:outline-none p-4"
+               id="user-text" cols="30" rows="10"></textarea>
+         </div>
+      </section>
+   </main>
+   <script src="./tailwind.config.js"></script>
+   <script src="./js/app.js"></script>
+</body>
+
+</html>
